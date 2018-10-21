@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'GraphikLCG-Semibold';
+  src: url("../fonts/GraphikLCG/GraphikLCG-Semibold.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'GraphikLCG-Medium';
+  src: url("../fonts/GraphikLCG/GraphikLCG-Medium.otf") format("opentype"); }
+
+@font-face {
+  font-family: 'GraphikLCG-Regular';
+  src: url("../fonts/GraphikLCG/GraphikLCG-Regular.otf") format("opentype"); }
+
+body {
+  font-family: 'GraphikLCG-Regular'; }
+
+.logo {
+  position: fixed;
+  top: 35px;
+  left: 35px; }
+
+.main {
+  padding: 50px 185px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.center-block {
+  height: 360px; }
+
+.title {
+  font-family: 'GraphikLCG-Semibold';
+  font-size: 36px;
+  color: #484848;
+  width: 440px; }
+
+.form {
+  width: 450px; }
+
+.error {
+  color: #f34c10;
+  font-size: 15px;
+  font-family: 'GraphikLCG-Regular';
+  text-align: center;
+  width: 400px;
+  margin-bottom: 12px;
+  height: 18px; }
+
+.success {
+  background: url("../img/galka.png") no-repeat 0 0;
+  padding-left: 40px;
+  height: 40px;
+  line-height: 28px;
+  font-size: 24px; }
+
+.police {
+  font-size: 13px;
+  color: #dbdbdb; }
+
+.img {
+  width: 470px;
+  margin-left: 50px; }
+
+input {
+  height: 50px;
+  width: 400px;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  border-radius: 5px;
+  color: #cccccc; }
+
+input[type='text'] {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  font-family: 'GraphikLCG-Regular'; }
+  input[type='text']:hover {
+    border: 1px solid #9b9b9b; }
+  input[type='text']:focus {
+    border: 2px solid #4a4a4a;
+    outline: none;
+    color: #222222; }
+
+input[type='submit'] {
+  background: #f34c10;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'GraphikLCG-Medium';
+  cursor: pointer;
+  outline: none; }
+
+@media (min-width: 1981px) {
+  .main {
+    width: 1600px;
+    margin: 0 auto; } }
+
+@media (max-width: 1980px) {
+  .main {
+    padding: 50px 256px; }
+  .img {
+    width: 400px;
+    margin-right: 100px; } }
+
+@media (max-width: 1440px) {
+  .main {
+    padding-left: 185px;
+    padding-right: 185px; }
+  .img {
+    width: 400px;
+    margin-right: 0; } }
+
+@media (max-width: 1439px) and (min-width: 1025px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%; } }
+
+@media (max-width: 1024px) {
+  .main {
+    padding-left: 37px;
+    padding-right: 37px; }
+  .img {
+    width: 300px;
+    margin-right: 50px; } }
+
+@media (max-width: 827px) and (min-width: 769px) {
+  .img {
+    width: 230px; } }
+
+@media (max-width: 768px) {
+  .logo {
+    position: unset;
+    margin: 35px; }
+  .main {
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 0; }
+  .form {
+    width: 400px; }
+  .title {
+    width: 400px;
+    font-size: 32px; }
+  .img {
+    margin-right: 0px; }
+  .success {
+    font-size: 22px; } }
+
+@media (max-width: 435px) {
+  .main {
+    flex-direction: column-reverse;
+    padding: 0 15px;
+    height: auto; }
+  .form {
+    width: 290px; }
+  .title {
+    font-size: 23px;
+    width: 290px;
+    margin-bottom: 34px; }
+  input {
+    width: 290px; }
+  .img {
+    width: 215px;
+    margin-left: 45px; }
+  .error {
+    width: 290px;
+    font-size: 12px; }
+  .success {
+    font-size: 15px;
+    padding-left: 30px; } }
+
+@media (max-width: 320px) {
+  .main {
+    flex-direction: column-reverse;
+    padding: 0 15px;
+    height: auto; }
+  .form {
+    width: 290px; }
+  .title {
+    font-size: 23px;
+    width: 290px;
+    margin-bottom: 34px; }
+  input {
+    width: 290px; }
+  .img {
+    width: 215px;
+    margin: 0 auto;
+    margin-left: 45px; } }
